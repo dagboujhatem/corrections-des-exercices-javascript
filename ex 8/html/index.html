@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title></title>
+  </head>
+  <body>
+    <h1>Calculateur de salaire</h1>
+    <form class="container">
+  <div class="row">
+    <div class="col-6">
+      <label for="nom">Nom</label>
+      <input type="text" class="form-control" id="nom" placeholder="nom" value="">
+    </div>
+    <div class="col-6">
+      <label for="prenom">Prénom</label>
+      <input type="text" class="form-control" id="prenom" placeholder="prénom" value="">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="sexe">Sexe</label>
+    <select class="form-control" id="sexe">
+      <option>M</option>
+      <option>F</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="salaire_base">Salaire de base:</label>
+    <input type="number" id="salaire_base" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="nb">Nombre de personnes à charge:</label>
+    <select class="form-control" id="nb">
+      <option value="0">Inférieur à 3</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="4">Supérieur à 4</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="bonus">Bonus:</label>
+    <select class="form-control" id="bonus">
+      <option value="false">Non</option>
+      <option value="true">Oui</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="allocation">Allocation:</label>
+    <select class="form-control" id="allocation">
+      <option value="false">Non</option>
+      <option value="true">Oui</option>
+    </select>
+  </div>
+<button type="button" name="button" id="b_submit" class="btn btn-success">submit</button>
+</form>
+     <script src="../js/js.js" charset="utf-8"></script>
+  </body>
+</html>
